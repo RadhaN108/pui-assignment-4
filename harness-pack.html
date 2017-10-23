@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Muddy Paws Harness Pack</title>
+    <!-- STYLES !-->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- FONTS !-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!-- JQUERY FILE !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS FILE !-->
+    <script src="script.js"></script>
+    <!-- RESOURCES & REFERENCES!
+      Photos:
+        Ruffwear: https://ruffwear.com/
+        Wuf Collar: https://getwuf.com/
+        Whistle: https://www.whistle.com/
+        National Geographic - Adventures outside with your dog: http://www.nationalgeographic.com/adventure/lists/photos-adventures-outside-with-your-dog/
+      Some copy (i.e. About and Individual Products)
+        Ruffwear: https://ruffwear.com/
+        Whistle: https://www.whistle.com/
+    -->
+  </head>
+  <body>
+    <header>
+        <!-- NAVIGATION !-->
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="img/logo.png" alt="muddypaws-logo"/></a></li>
+                <li><a href="product-index.html">Products</a></li>
+                <li><a href="tails.html">Tails</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="cart.html" class="cart">Cart</a></li>
+            </ul>
+        </nav>
+        <nav class="back-nav">
+            <a href="product-index.html"><h3>&lt;&lt; back to all products</h3></a>
+        </nav>
+    </header>
+    <section class="product-detail-panel">
+        <!-- PRODUCT IMAGES !-->
+        <div class="product-images">
+            <div class="display-image" style="background-image: url(img/pack-hero.jpg)"></div>
+            <ul class="thumbnails">
+                <li><a img="pack-hero.jpg" class="active" style="background-image: url(img/pack-hero.jpg)"></a></li>
+                <li><a img="pack1.jpg" style="background-image: url(img/pack1.jpg)"></a></li>
+                <li><a img="pack2.jpg" style="background-image: url(img/pack2.jpg)"></a></li>
+                <li><a img="pack3.jpg" style="background-image: url(img/pack3.jpg)"></a></li>
+            </ul>
+        </div>
+        <!-- PRODUCT INFORMATION !-->
+        <div class="product-desc">
+            <h2>Harness Attachment</h2>
+            <h3>$38</h3>
+            <p>The Harness Attachement Pack is a sleek, low-profile hydration pack. Featuring two on-board, collapsible water bottles, dogs stay hydrated for the long haul. Two external stash pockets fit other adventure essentials.</p>
+            <!-- PRODUCT FORM INPUTS !-->
+            <form id="product" data-name="Harness Attachment" data-price="38">
+                <select id="size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option value="Tiny">Tiny</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+                <select id="color" required>
+                    <option value="" disabled selected>Select color</option>
+                    <option value="Strawberry" data-image="pack1.jpg">Strawberry</option>
+                    <option value="Blackberry" data-image="pack1.jpg">Blackberry</option>
+                    <option value="Crazyberry" data-image="pack1.jpg">Crazyberry</option>
+                    <option value="Camouflage" data-image="pack1.jpg">Camouflage</option>
+                    <option value="Night moon" data-image="pack1.jpg">Night Moon</option>
+                    <option value="Fire orange" data-image="pack1.jpg">Fire Orange</option>
+                </select>
+                <input type="Submit" value="Add to Cart"/>
+            </form>
+            <a class="wishlist">Add to Wishlist</a>
+        </div>
+    </section>
+    <!-- RELATED PRODUCTS !-->
+    <section class="related-products-panel">
+        <a class="left-arrow" style="background-image: url(img/left-arrow.png)"></a>
+        <div>
+            <h3>Related Products</h3>
+            <div class="related-item">
+                <div style="background-image: url(img/catgrass.jpg)"></div>
+                <div class="product-desc">
+                    <h2>Cat Harness</h2>
+                    <h3>$32</h3>
+                    <p>The Front Range Cat Harness is an everyday harness that is easy to put on and comfortable for cats to wear. The harness features two leash attachment points: an aluminum V-ring centered on the dog's back for everyday walks, and reinforced webbing at the cat's chest for training or additional control.</p>
+                    <h3><a href="cat-harness.html">View Product</a></h3>
+                </div>
+            </div>
+        </div>
+        <a class="right-arrow" style="background-image: url(img/right-arrow.png)"></a>
+    </section>
+    <!-- FOOTER !-->
+    <footer>
+        <ul>
+            <li><a href="#">Fit Guide</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
